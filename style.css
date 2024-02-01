@@ -1,0 +1,222 @@
+body {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+.box{
+    display: flex;
+}
+    /* Untuk Content 5 Warna */
+    .box1{
+        flex: 1;
+        background-color: #EBBA4A;
+        height: 100vh;
+        width: 32vw;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    .box2{
+        background-color: #E8A03E;
+        height: 100vh;
+        width: 12vw;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    .box3{
+        background-color: #5AC6FA;
+        height: 100vh;
+        width: 12vw;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    .box4{
+        background-color: #459CE3;
+        height: 100vh;
+        width: 12vw;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    .box5{
+        background-color: #E3634D;
+        height: 100vh;
+        width: 32vw;
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+.box-main{
+    height: 30vh;
+    width: 100vw;
+    margin-top: 180px;
+    background-color: grey;
+    flex-direction: column;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    overflow: auto;
+}
+    /* Untuk main content (Box Abu-Abu) */
+    .box-main-content{
+        margin-left: 24%;
+        width: 42vw;
+        min-width: 40vw;
+        /* border: solid 1px black; */
+    }
+    .triangle-content{
+        display: flex;
+        margin-top: -5px;
+    }
+    .triangle{
+        width: 30px;
+        filter: invert(1);
+        margin-right: 10px;
+    }
+    .dialog-triangle{
+        font-size: 24px;
+        word-spacing: 3px;
+    }
+    span{
+        font-weight: bold;
+    }
+    .dialog{
+        margin-top: -15px;
+    }
+    .box-main-content .dialog-content{
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+    button {
+        width: 12.5vw;
+        height: 5vh;
+        font-size: 12px;
+        color: white;
+        border: solid 1px white;
+        background-color: rgb(146, 141, 141);
+        margin-bottom: 5px;
+        font-weight: bold;
+        padding: 8px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: black;
+    }
+  
+.box-icon-left{
+    float: right;
+    margin-top: 61.9vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 5px 10px;
+} 
+.box-icon-right{
+    float: left;
+    margin-top: 61.9vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 5px 25px;
+} 
+.box-icon-middle{
+    margin-top: 61.9vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 8px 10px;
+}
+    /* COntent Icon */
+    .icon {
+        width: 100px;
+        filter: invert(1);
+        align-items: center;
+    }
+    .icon-content{
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .icon-name{
+        word-spacing: 2px;
+    }
+    .icon-version{
+        margin-top: 5px;
+    }
+    .download-btn{
+        width: 100px;
+        color: white;
+        background-color: rgb(95, 90, 90);
+        border: solid 2px white;
+        opacity: 0.6;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .download-icon{
+        display: none;
+    }
+
+@media (max-width: 600px) {
+    body{
+        height: auto;
+    }
+    .box-main{
+        margin-top: 0;
+        align-items: flex-start;
+        position: relative;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .box1, .box2, .box3, .box4, .box5{
+        width: 100%;
+        flex: 1;
+    }
+    .box-main-content{
+        margin: 10px 10%;
+        width: auto;
+    }
+    .dialog-triangle{
+        font-size: 1.2em;
+    }
+    button{
+        width: auto;
+    }
+    .box-icon-left, .box-icon-right{
+        flex-direction: row;
+        margin: 10px 10px 10px 30px;
+        float: none;
+    }
+    .box-icon-right{
+        padding: 8px 10px;
+    }
+    .box-icon-middle{
+        flex-direction: row;
+        margin: 10px 10px 10px 30px;
+        float: none;
+    }
+    .icon{
+        width: 100px;
+    }
+    .icon-content{
+        text-align: left;
+        margin-left: 5%;
+        font-size: 0.8em;
+        margin-right: 30;
+        width: 100vw;
+    }
+    .download-btn{
+        display: none;
+    }
+    .download-icon{
+        display: block;
+        filter: invert(1);
+        margin-top: 10px;
+    }
+}
